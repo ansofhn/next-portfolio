@@ -51,7 +51,7 @@ export default function ContactContent() {
         <h1 className="font-display text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold tracking-tight leading-tight text-[#1c1b18]">
           Love to hear from you.
           <br />
-          <span className="text-[#c8a96e]">Let's talk.</span>
+          <span className="text-[#c8a96e]">Let&apos;s talk.</span>
         </h1>
       </motion.div>
 
@@ -68,7 +68,7 @@ export default function ContactContent() {
               <FiCheckCircle className="w-10 h-10 text-[#c8a96e]" />
               <h2 className="text-2xl font-bold">Message sent!</h2>
               <p className="text-white/50 text-sm leading-relaxed">
-                Thanks for reaching out. I'll get back to you as soon as
+                Thanks for reaching out. I&apos;ll get back to you as soon as
                 possible — usually within 24 hours.
               </p>
               <button
