@@ -1,0 +1,195 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { siteConfig, skills } from "@/lib/data";
+
+const experience = [
+  {
+    company: "Trustlink CDI",
+    role: "Front End Developer",
+    period: "Jan 2023 – Present",
+    description:
+      "Leading front-end development for an identity verification SaaS platform. Architected the dashboard, real-time document upload, and status-tracking UI.",
+  },
+  {
+    company: "G11 Game",
+    role: "Front End Developer",
+    period: "Sep 2022 – Mar 2023",
+    description:
+      "Developed the match simulation interface and squad-management screens for a football web game. Implemented complex animations and live match state management.",
+  },
+  {
+    company: "Freelance",
+    role: "Front End Developer",
+    period: "May 2022 – Present",
+    description:
+      "Delivered web projects for SMEs and startups across e-commerce, agriculture, and education sectors.",
+  },
+];
+
+const education = [
+  {
+    school: "SMKN 1 Cibinong",
+    field: "Sistem Informatika Jaringan dan Aplikasi (SIJA)",
+    period: "2020 – 2023",
+  },
+];
+
+export default function AboutContent() {
+  const itemAnim = {
+    hidden: { opacity: 0, y: 24 },
+    show: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay: i * 0.1, duration: 0.55, ease: "easeOut" },
+    }),
+  };
+
+  return (
+    <div className="px-5 sm:px-10 max-w-7xl mx-auto pt-36 pb-20">
+      {/* Page header */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.55 }}
+        className="mb-20"
+      >
+        <p className="text-xs font-semibold tracking-[0.25em] uppercase text-[#1c1b18]/40 mb-3 flex items-center gap-2">
+          <span className="inline-block w-6 h-px bg-[#c8a96e]" />
+          About me
+        </p>
+        <h1 className="font-display text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold tracking-tight leading-tight text-[#1c1b18]">
+          The person behind
+          <br />
+          the <span className="text-[#c8a96e]">code</span>
+        </h1>
+      </motion.div>
+
+      <div className="grid grid-cols-1 gap-20 lg:grid-cols-5">
+        {/* Bio column */}
+        <div className="lg:col-span-3 space-y-16">
+          {/* Bio text */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.55 }}
+            className="space-y-5"
+          >
+            <h2 className="text-xs font-semibold tracking-[0.2em] uppercase text-[#1c1b18]/30 border-b border-[#1c1b18]/10 pb-3">
+              Bio
+            </h2>
+            <p className="text-base sm:text-lg text-[#1c1b18]/70 leading-relaxed">
+              {siteConfig.bio}
+            </p>
+            <p className="text-base sm:text-lg text-[#1c1b18]/70 leading-relaxed">
+              When I'm not coding, I enjoy exploring UI/UX concepts, following
+              developments in the tech scene, and collaborating with other
+              creators online.
+            </p>
+          </motion.div>
+
+          {/* Experience */}
+          <div className="space-y-6">
+            <h2 className="text-xs font-semibold tracking-[0.2em] uppercase text-[#1c1b18]/30 border-b border-[#1c1b18]/10 pb-3">
+              Experience
+            </h2>
+            {experience.map((exp, i) => (
+              <motion.div
+                key={exp.company}
+                custom={i}
+                variants={itemAnim}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+                className="group grid grid-cols-[1fr_auto] gap-4 p-6 border border-[#1c1b18]/8 hover:border-[#c8a96e]/40 rounded-sm transition-colors duration-200"
+              >
+                <div className="space-y-1">
+                  <p className="font-bold text-[#1c1b18]">{exp.company}</p>
+                  <p className="text-sm text-[#1c1b18]/50">{exp.role}</p>
+                  <p className="text-sm text-[#1c1b18]/60 mt-2 leading-relaxed">
+                    {exp.description}
+                  </p>
+                </div>
+                <div className="text-right">
+                  <span className="text-xs text-[#1c1b18]/30 whitespace-nowrap">
+                    {exp.period}
+                  </span>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Education */}
+          <div className="space-y-6">
+            <h2 className="text-xs font-semibold tracking-[0.2em] uppercase text-[#1c1b18]/30 border-b border-[#1c1b18]/10 pb-3">
+              Education
+            </h2>
+            {education.map((edu, i) => (
+              <motion.div
+                key={edu.school}
+                custom={i}
+                variants={itemAnim}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+                className="p-6 border border-[#1c1b18]/8 rounded-sm"
+              >
+                <div className="flex justify-between gap-4">
+                  <div>
+                    <p className="font-bold text-[#1c1b18]">{edu.school}</p>
+                    <p className="text-sm text-[#1c1b18]/50 mt-0.5">{edu.field}</p>
+                  </div>
+                  <span className="text-xs text-[#1c1b18]/30 whitespace-nowrap">
+                    {edu.period}
+                  </span>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+
+        {/* Skills sidebar */}
+        <aside className="lg:col-span-2 space-y-8">
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.35, duration: 0.55 }}
+            className="sticky top-28"
+          >
+            <h2 className="text-xs font-semibold tracking-[0.2em] uppercase text-[#1c1b18]/30 border-b border-[#1c1b18]/10 pb-3 mb-8">
+              Skills
+            </h2>
+            <div className="space-y-8">
+              {skills.map((group) => (
+                <div key={group.category}>
+                  <h3 className="text-xs font-semibold tracking-widest uppercase text-[#c8a96e] mb-3">
+                    {group.category}
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    {group.items.map((item) => (
+                      <span
+                        key={item}
+                        className="px-3 py-1.5 text-xs font-medium rounded-full bg-[#1c1b18]/5 text-[#1c1b18]/60 border border-[#1c1b18]/8"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Contact quick info */}
+            <div className="mt-10 p-6 bg-[#1c1b18] rounded-sm space-y-3">
+              <p className="text-xs font-semibold tracking-widest uppercase text-[#c8a96e]">
+                Contact
+              </p>
+              <p className="text-sm text-white/60">{siteConfig.email}</p>
+              <p className="text-sm text-white/60">{siteConfig.location}</p>
+            </div>
+          </motion.div>
+        </aside>
+      </div>
+    </div>
+  );
+}

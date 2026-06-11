@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Raleway", sans-serif;
+  --font-body: "Poppins", sans-serif;
+
+  --color-ink: #1c1b18;
+  --color-ink-muted: #302f2c;
+  --color-paper: #f7f6f2;
+  --color-paper-dark: #eceae3;
+  --color-accent: #c8a96e;
+  --color-accent-hover: #b8964f;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+  }
+
+  ::selection {
+    background: var(--color-ink);
+    color: var(--color-paper);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Smooth scroll offset for fixed navbar */
+[id] {
+  scroll-margin-top: 80px;
+}
