@@ -16,7 +16,7 @@ export default function Callback() {
       >
         {/* Background typography mark */}
         <span className="pointer-events-none absolute right-0 bottom-0 text-[clamp(60px,12vw,140px)] font-extrabold text-white/[0.03] leading-none select-none pr-4 pb-2">
-          LET'S GO
+          LET&apos;S GO
         </span>
 
         <p className="text-xs font-semibold tracking-[0.25em] uppercase text-[#c8a96e] mb-4 flex items-center gap-2">
@@ -24,7 +24,7 @@ export default function Callback() {
           Open for work
         </p>
         <h2 className="font-display text-[clamp(2rem,5vw,3.75rem)] font-extrabold leading-tight tracking-tight text-balance mb-8 max-w-xl">
-          Have a project in mind? Let's build it.
+          Have a project in mind? Let&apos;s build it.
         </h2>
         <Link
           href="/contact"

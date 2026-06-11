@@ -82,7 +82,7 @@ export default function AboutContent() {
               {siteConfig.bio}
             </p>
             <p className="text-base sm:text-lg text-[#1c1b18]/70 leading-relaxed">
-              When I'm not coding, I enjoy exploring UI/UX concepts, following
+              When I&apos;m not coding, I enjoy exploring UI/UX concepts, following
               developments in the tech scene, and collaborating with other
               creators online.
             </p>
