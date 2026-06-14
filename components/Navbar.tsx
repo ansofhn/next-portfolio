@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, Variants } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -41,7 +41,7 @@ export default function Navbar() {
     return () => { document.body.style.overflow = ""; };
   }, [open]);
 
-  const overlayVariants = {
+  const overlayVariants: Variants = {
     hidden: { opacity: 0, y: "-100%" },
     show: {
       opacity: 1,
@@ -55,7 +55,7 @@ export default function Navbar() {
     },
   };
 
-  const linkVariants = {
+  const linkVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
     show: (i: number) => ({
       opacity: 1,

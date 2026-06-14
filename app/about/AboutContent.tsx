@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { siteConfig, skills } from "@/lib/data";
 
 const experience = [
@@ -36,14 +36,18 @@ const education = [
 ];
 
 export default function AboutContent() {
-  const itemAnim = {
-    hidden: { opacity: 0, y: 24 },
-    show: (i: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: { delay: i * 0.1, duration: 0.55, ease: "easeOut" },
-    }),
-  };
+  const itemAnim: Variants = {
+  hidden: { opacity: 0, y: 16 },
+  show: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.1,
+      duration: 0.4,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  }),
+};
 
   return (
     <div className="px-5 sm:px-10 max-w-7xl mx-auto pt-36 pb-20">
