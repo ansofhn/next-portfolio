@@ -26,28 +26,6 @@ export type BAProject = {
 
 export const baProjects: BAProject[] = [
   {
-    id: "BA-001",
-    title: "Odysseus Digiroom Auto2000",
-    role: "Business Analyst",
-    scope: [
-      "Responsible for rquirement analysis",
-      "Business process improvement",
-      "Digital sales journey enhancement",
-      "Collabroated with BU, product owners, UI/UX, developers, and QA to define and deliver operational features",
-    ],
-    deliverables: [
-      "Business Requirements Documents (BRD)",
-      "Functional Specification Documents (FSD)",
-      "User Stories & Acceptance Criteria",
-      "Business Rules Documentation",
-      "Process Flow & User Journey Mapping",
-      "Change Request Analysis",
-      "UAT Support & Validation",
-    ],
-    impact:
-      "Improved digital vehicle sales journey and customer acquisition processes.",
-  },
-  {
     id: "BA-002",
     title: "DIDX - mTOYOTA & DXMI Platform",
     role: "Business Analyst",
@@ -76,6 +54,28 @@ export const baProjects: BAProject[] = [
     impact:
       "Delivered enhancements across mTOYOTA and DXMI platforms used by customers and Toyota dealer",
   },
+  {
+    id: "BA-001",
+    title: "Odysseus Digiroom Auto2000",
+    role: "Business Analyst",
+    scope: [
+      "Responsible for rquirement analysis",
+      "Business process improvement",
+      "Digital sales journey enhancement",
+      "Collabroated with BU, product owners, UI/UX, developers, and QA to define and deliver operational features",
+    ],
+    deliverables: [
+      "Business Requirements Documents (BRD)",
+      "Functional Specification Documents (FSD)",
+      "User Stories & Acceptance Criteria",
+      "Business Rules Documentation",
+      "Process Flow & User Journey Mapping",
+      "Change Request Analysis",
+      "UAT Support & Validation",
+    ],
+    impact:
+      "Improved digital vehicle sales journey and customer acquisition processes.",
+  },
 ];
 
 export type Project = {
@@ -91,25 +91,26 @@ export type Project = {
 
 export const technicalProjects: Project[] = [
   {
-    id: "trustlink",
-    title: "Trustlink CDI",
-    category: "Identity Verification Platform",
-    period: "Jan 2023 – Present",
-    description:
-      "End-to-end identity verification platform for corporate clients. Designed and built the front-end dashboard, document-upload flow, and real-time status tracking.",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
-    image: "/assets/TrustlinkCDI.png",
-  },
-  {
     id: "g11game",
     title: "G11 Game",
     category: "Game Development",
-    period: "Sep 2022 – Mar 2023",
+    period: "Apr 2022 – May 2024",
     description:
       "Garuda Eleven — a football management game web app with live match simulation, squad management, and league standings.",
     tags: ["React", "Framer Motion", "REST API"],
     image: "/assets/G11.png",
   },
+  {
+    id: "trustlink",
+    title: "Trustlink CDI",
+    category: "Identity Verification Platform",
+    period: "Apr 2022 – May 2024",
+    description:
+      "End-to-end identity verification platform for corporate clients. Designed and built the front-end dashboard, document-upload flow, and real-time status tracking.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+    image: "/assets/TrustlinkCDI.png",
+  },
+
   {
     id: "encrease",
     title: "Encrease",
@@ -161,7 +162,7 @@ export const skills: Skill[] = [
   {
     category: "Business Analysis",
     items: [
-      "Requirement Elicitation",
+      "Requirement Gathering",
       "Stakeholder Management",
       "Gap Analysis",
       "Process Improvement",
@@ -179,7 +180,6 @@ export const skills: Skill[] = [
       "Business Rules",
       "Jira Ticketing",
       "Confluence",
-      "BPMN",
       "Wireframing",
     ],
   },
@@ -191,12 +191,11 @@ export const skills: Skill[] = [
       "Data Validation",
       "Excel",
       "Power BI",
-      "Tableau",
     ],
   },
   {
     category: "Technical",
-    items: ["React", "Next.js", "HTML/CSS", "REST API", "Git"],
+    items: ["React", "Next.js", "Tailwind", "HTML/CSS", "REST API", "Git"],
   },
 ];
 
