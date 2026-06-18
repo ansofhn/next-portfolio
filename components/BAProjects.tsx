@@ -37,7 +37,7 @@ export default function BAProjects() {
             <div className="flex items-start justify-between gap-3 mb-5">
               <div>
                 <p className="text-[11px] font-semibold tracking-[0.2em] uppercase text-[#c8a96e] mb-1.5">
-                  Business Analyst
+                  {project.period}
                 </p>
                 <h3 className="font-display text-lg sm:text-xl font-bold text-white leading-snug">
                   {project.title}
