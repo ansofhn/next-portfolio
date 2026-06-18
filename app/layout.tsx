@@ -22,24 +22,24 @@ export const metadata: Metadata = {
     default: "Ansof Habibunnadjar | Business Analyst & Software Developer",
   },
   description:
-    "Front end developer based in Indonesia. Building fast, accessible, and beautifully crafted web experiences.",
-  keywords: ["front end developer", "React", "Next.js", "portfolio", "Indonesia"],
+    "Bridging business needs and technology solutions through requirement analysis, stakeholder collaboration, and data-driven decision making.",
+  keywords: ["business analyst", "software developer", "React", "Next.js", "portfolio", "Indonesia"],
   authors: [{ name: "Ansof Habibunnadjar" }],
   creator: "Ansof Habibunnadjar",
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://ansofhn.dev",
+    url: "https://unsoft.vercel.app",
     title: "Ansof Habibunnadjar | Business Analyst & Software Developer",
     description:
-      "Front end developer based in Indonesia. Building fast, accessible, and beautifully crafted web experiences.",
+      "Business analyst and software developer based in Indonesia. Bridging business needs and technology solutions.",
     siteName: "Ansof Habibunnadjar",
   },
   twitter: {
     card: "summary_large_image",
     title: "Ansof Habibunnadjar | Business Analyst & Software Developer",
     description:
-      "Front end developer based in Indonesia. Building fast, accessible, and beautifully crafted web experiences.",
+      "Business analyst and software developer based in Indonesia. Bridging business needs and technology solutions.",
   },
 };
 
