@@ -5,7 +5,7 @@ import { siteConfig, skills } from "@/lib/data";
 
 const experience = [
   {
-    company: "Astra Digital International",
+    company: "PT Astra Digital International",
     role: "Business Analyst",
     period: "May 2023 – Present",
     description:
@@ -26,7 +26,7 @@ const experience = [
     description:
       "Developed responsive and interactive user interfaces for web applications using modern JavaScript frameworks.",
     responsibilities: [
-      "Built responsive user interfaces using HTML, CSS, and JavaScript",
+      "Built responsive user interfaces",
       "Translated UI/UX designs into interactive web pages",
       "Optimized front-end performance and accessibility",
       "Collaborated with design and back-end teams on feature integration",
