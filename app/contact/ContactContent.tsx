@@ -213,18 +213,6 @@ export default function ContactContent() {
               </p>
             </div>
           </div>
-
-          <div className="p-6 border border-[#1c1b18]/8 rounded-sm space-y-2">
-            <p className="text-xs font-semibold tracking-widest uppercase text-[#c8a96e]">
-              Availability
-            </p>
-            <p className="text-sm text-[#1c1b18]/70">
-              Open to Business Analyst opportunities
-            </p>
-            <p className="text-sm text-[#1c1b18]/70">
-              Available for remote/hybrid roles
-            </p>
-          </div>
         </motion.aside>
       </div>
     </div>
