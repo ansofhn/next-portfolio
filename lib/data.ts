@@ -59,7 +59,7 @@ export const baProjects: BAProject[] = [
   {
     id: "BA-001",
     title: "Odysseus Digiroom Auto2000",
-    period: "Apr 2023 – Oct 2024",
+    period: "May 2023 – Oct 2024",
     role: "Business Analyst",
     scope: [
       "Responsible for requirement analysis",
