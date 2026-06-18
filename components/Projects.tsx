@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { featuredProjects } from "@/lib/data";
+import { technicalProjects } from "@/lib/data";
 import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
@@ -17,16 +17,16 @@ export default function Projects() {
       >
         <p className="text-xs font-semibold tracking-[0.25em] uppercase text-[#1c1b18]/40 mb-3 flex items-center gap-2">
           <span className="inline-block w-6 h-px bg-[#c8a96e]" />
-          Selected Work
+          Engineering Work
         </p>
         <h2 className="font-display text-[clamp(2rem,5vw,3.5rem)] font-extrabold text-[#1c1b18] tracking-tight leading-tight">
-          Featured Projects
+          Technical Projects
         </h2>
       </motion.div>
 
       {/* Grid */}
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-        {featuredProjects.map((project, i) => (
+        {technicalProjects.map((project, i) => (
           <ProjectCard key={project.id} project={project} index={i} />
         ))}
       </div>

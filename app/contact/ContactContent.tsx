@@ -23,7 +23,7 @@ export default function ContactContent() {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -72,7 +72,10 @@ export default function ContactContent() {
                 possible — usually within 24 hours.
               </p>
               <button
-                onClick={() => { setSubmitted(false); setForm({ name: "", email: "", phone: "", message: "" }); }}
+                onClick={() => {
+                  setSubmitted(false);
+                  setForm({ name: "", email: "", phone: "", message: "" });
+                }}
                 className="mt-2 text-sm text-[#c8a96e] underline underline-offset-4"
               >
                 Send another message
@@ -82,7 +85,10 @@ export default function ContactContent() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-[#1c1b18]/70" htmlFor="name">
+                  <label
+                    className="text-sm font-medium text-[#1c1b18]/70"
+                    htmlFor="name"
+                  >
                     Your name
                   </label>
                   <input
@@ -96,7 +102,10 @@ export default function ContactContent() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-[#1c1b18]/70" htmlFor="email">
+                  <label
+                    className="text-sm font-medium text-[#1c1b18]/70"
+                    htmlFor="email"
+                  >
                     Email address
                   </label>
                   <input
@@ -112,9 +121,14 @@ export default function ContactContent() {
                 </div>
               </div>
               <div className="space-y-2">
-                <label className="text-sm font-medium text-[#1c1b18]/70" htmlFor="phone">
+                <label
+                  className="text-sm font-medium text-[#1c1b18]/70"
+                  htmlFor="phone"
+                >
                   Phone number{" "}
-                  <span className="text-[#1c1b18]/30 font-normal">(optional)</span>
+                  <span className="text-[#1c1b18]/30 font-normal">
+                    (optional)
+                  </span>
                 </label>
                 <input
                   id="phone"
@@ -127,7 +141,10 @@ export default function ContactContent() {
                 />
               </div>
               <div className="space-y-2">
-                <label className="text-sm font-medium text-[#1c1b18]/70" htmlFor="message">
+                <label
+                  className="text-sm font-medium text-[#1c1b18]/70"
+                  htmlFor="message"
+                >
                   Message
                 </label>
                 <textarea
@@ -197,19 +214,16 @@ export default function ContactContent() {
             </div>
           </div>
 
-          {/* Map */}
-          <div className="overflow-hidden rounded-sm border border-[#1c1b18]/8">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.2742676735984!2d106.79038577428638!3d-6.48691116342124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c31fd83153f9%3A0x325a1662bf4bed19!2sMajelis%20Ta&#39;lim%20Bani%20Abdullah!5e0!3m2!1sid!2sid!4v1682675702143!5m2!1sid!2sid"
-              title="Location map"
-              width="100%"
-              height="220"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="grayscale"
-            />
+          <div className="p-6 border border-[#1c1b18]/8 rounded-sm space-y-2">
+            <p className="text-xs font-semibold tracking-widest uppercase text-[#c8a96e]">
+              Availability
+            </p>
+            <p className="text-sm text-[#1c1b18]/70">
+              Open to Business Analyst opportunities
+            </p>
+            <p className="text-sm text-[#1c1b18]/70">
+              Available for remote/hybrid roles
+            </p>
           </div>
         </motion.aside>
       </div>

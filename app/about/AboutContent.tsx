@@ -5,6 +5,21 @@ import { siteConfig, skills } from "@/lib/data";
 
 const experience = [
   {
+    company: "[Toyota Astra Motor]",
+    role: "Business Analyst",
+    period: "Oct 2023 – Present",
+    description:
+      "Facilitated requirement gathering, produced FSD/BRD/UAC, and aligned business and engineering teams across automotive digital initiatives.",
+    responsibilities: [
+      "Facilitated requirement gathering workshops with business stakeholders",
+      "Produced FSD, BRD, and UAC using Gherkin standards",
+      "Defined dashboard metrics, business rules, and KPI calculations",
+      "Coordinated alignment between business users, developers, QA, and UI/UX",
+      "Managed change requests and backlog refinement using Jira",
+      "Conducted impact analysis and UAT support",
+    ],
+  },
+  {
     company: "Trustlink CDI",
     role: "Front End Developer",
     period: "Jan 2023 – Present",
@@ -37,17 +52,17 @@ const education = [
 
 export default function AboutContent() {
   const itemAnim: Variants = {
-  hidden: { opacity: 0, y: 16 },
-  show: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: i * 0.1,
-      duration: 0.4,
-      ease: [0.22, 1, 0.36, 1],
-    },
-  }),
-};
+    hidden: { opacity: 0, y: 16 },
+    show: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.1,
+        duration: 0.4,
+        ease: [0.22, 1, 0.36, 1],
+      },
+    }),
+  };
 
   return (
     <div className="px-5 sm:px-10 max-w-7xl mx-auto pt-36 pb-20">
@@ -86,9 +101,15 @@ export default function AboutContent() {
               {siteConfig.bio}
             </p>
             <p className="text-base sm:text-lg text-[#1c1b18]/70 leading-relaxed">
-              When I&apos;m not coding, I enjoy exploring UI/UX concepts, following
-              developments in the tech scene, and collaborating with other
-              creators online.
+              I specialize in requirement elicitation, Functional Specification
+              Documents (FSD), User Acceptance Criteria (UAC), dashboard metric
+              definitions, and stakeholder alignment across automotive digital
+              initiatives.
+              <br />
+              <br />
+              With a technical background, I bridge the gap between business and
+              engineering teams to ensure solutions are practical, measurable,
+              and user-centric.
             </p>
           </motion.div>
 
@@ -112,6 +133,15 @@ export default function AboutContent() {
                   <p className="text-sm text-[#1c1b18]/50">{exp.role}</p>
                   <p className="text-sm text-[#1c1b18]/60 mt-2 leading-relaxed">
                     {exp.description}
+                    {exp.responsibilities && (
+                      <ul className="list-disc list-inside mt-2 space-y-1">
+                        {exp.responsibilities.map((item, j) => (
+                          <li key={j} className="text-sm text-[#1c1b18]/60">
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </p>
                 </div>
                 <div className="text-right">
@@ -141,7 +171,9 @@ export default function AboutContent() {
                 <div className="flex justify-between gap-4">
                   <div>
                     <p className="font-bold text-[#1c1b18]">{edu.school}</p>
-                    <p className="text-sm text-[#1c1b18]/50 mt-0.5">{edu.field}</p>
+                    <p className="text-sm text-[#1c1b18]/50 mt-0.5">
+                      {edu.field}
+                    </p>
                   </div>
                   <span className="text-xs text-[#1c1b18]/30 whitespace-nowrap">
                     {edu.period}

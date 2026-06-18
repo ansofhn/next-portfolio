@@ -19,7 +19,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: {
     template: "%s | Ansof Habibunnadjar",
-    default: "Ansof Habibunnadjar — Front End Developer",
+    default: "Ansof Habibunnadjar | Business Analyst & Software Developer",
   },
   description:
     "Front end developer based in Indonesia. Building fast, accessible, and beautifully crafted web experiences.",
@@ -30,14 +30,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "id_ID",
     url: "https://ansofhn.dev",
-    title: "Ansof Habibunnadjar — Front End Developer",
+    title: "Ansof Habibunnadjar | Business Analyst & Software Developer",
     description:
       "Front end developer based in Indonesia. Building fast, accessible, and beautifully crafted web experiences.",
     siteName: "Ansof Habibunnadjar",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ansof Habibunnadjar — Front End Developer",
+    title: "Ansof Habibunnadjar | Business Analyst & Software Developer",
     description:
       "Front end developer based in Indonesia. Building fast, accessible, and beautifully crafted web experiences.",
   },

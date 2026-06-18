@@ -1,8 +1,9 @@
 export const siteConfig = {
   name: "Ansof Habibunnadjar",
-  role: "Business Analyst | Software Developer",
-  tagline: "Building fast, accessible, and beautifully crafted web experiences.",
-  bio: "Over the past 3 years as a Front End Developer, I've partnered with companies and early-stage startups to design and ship digital products that are both visually sharp and technically sound. I specialise in React and Next.js, and I care deeply about performance and user experience.",
+  role: "IT Business Analyst & Software Developer",
+  tagline:
+    "Bridging business needs and technology solutions through requirement analysis, stakeholder collaboration, and data-driven decision making.",
+  bio: "Over the past several years, I have been working closely with business stakeholders, development teams, and end users to transform business challenges into digital solutions. I specialize in requirement elicitation, Functional Specification Documents (FSD), User Acceptance Criteria (UAC), dashboard metric definitions, and stakeholder alignment across [ISI SENDIRI: industri/domain]. With a technical background, I bridge the gap between business and engineering teams to ensure solutions are practical, measurable, and user-centric.",
   email: "ansofhn5@gmail.com",
   phone: "085692751958",
   location: "Bogor, Indonesia",
@@ -13,6 +14,69 @@ export const siteConfig = {
   },
   copyright: `© ${new Date().getFullYear()} Ansof Habibunnadjar`,
 };
+
+export type BAProject = {
+  id: string;
+  title: string;
+  role: string;
+  scope: string[];
+  deliverables: string[];
+  impact: string;
+};
+
+export const baProjects: BAProject[] = [
+  {
+    id: "BA-001",
+    title: "Odysseus Digiroom Auto2000",
+    role: "Business Analyst",
+    scope: [
+      "Responsible for rquirement analysis",
+      "Business process improvement",
+      "Digital sales journey enhancement",
+      "Collabroated with BU, product owners, UI/UX, developers, and QA to define and deliver operational features",
+    ],
+    deliverables: [
+      "Business Requirements Documents (BRD)",
+      "Functional Specification Documents (FSD)",
+      "User Stories & Acceptance Criteria",
+      "Business Rules Documentation",
+      "Process Flow & User Journey Mapping",
+      "Change Request Analysis",
+      "UAT Support & Validation",
+    ],
+    impact:
+      "Improved digital vehicle sales journey and customer acquisition processes.",
+  },
+  {
+    id: "BA-002",
+    title: "DIDX - mTOYOTA & DXMI Platform",
+    role: "Business Analyst",
+    scope: [
+      "Customer-facing (mTOYOTA) platform",
+      "Dealer-facing (DXMI) platform",
+      "Responsible for requirement gathering",
+      "Business process design",
+      "Dashboard metric definition",
+      "Stakeholder alignment",
+      "End-to-end feature delivery across customer registration, vehicle ownership, appraisal, trade-in, and analytics dashboards",
+    ],
+    deliverables: [
+      "Functional Specification Documents (FSD)",
+      "Business Requirement Analysis",
+      "User Acceptance Criteria (Gherkin)",
+      "Business Rules & Policy Documentation",
+      "Dashboard Metric Definitions",
+      "KPI Calculation Logic",
+      "Data Mapping & Validation Rules",
+      "User Stories & Jira Tickets",
+      "Process Flow Diagrams",
+      "Change Request Documentation",
+      "UAT Support & Validation",
+    ],
+    impact:
+      "Delivered enhancements across mTOYOTA and DXMI platforms used by customers and Toyota dealer",
+  },
+];
 
 export type Project = {
   id: string;
@@ -25,7 +89,7 @@ export type Project = {
   link?: string;
 };
 
-export const featuredProjects: Project[] = [
+export const technicalProjects: Project[] = [
   {
     id: "trustlink",
     title: "Trustlink CDI",
@@ -95,19 +159,87 @@ export type Skill = {
 
 export const skills: Skill[] = [
   {
-    category: "Languages",
-    items: ["JavaScript", "TypeScript", "HTML5", "CSS3"],
+    category: "Business Analysis",
+    items: [
+      "Requirement Elicitation",
+      "Stakeholder Management",
+      "Gap Analysis",
+      "Process Improvement",
+      "User Story Writing",
+      "Gherkin UAC",
+      "UAT Support",
+      "Root Cause Analysis",
+    ],
   },
   {
-    category: "Frameworks & Libraries",
-    items: ["React", "Next.js", "Framer Motion", "Tailwind CSS"],
+    category: "Documentation",
+    items: [
+      "BRD",
+      "FSD",
+      "Business Rules",
+      "Jira Ticketing",
+      "Confluence",
+      "BPMN",
+      "Wireframing",
+    ],
   },
   {
-    category: "Tools & Platforms",
-    items: ["Git", "Figma", "Vercel", "VS Code"],
+    category: "Analytics",
+    items: [
+      "SQL",
+      "Dashboard Metrics Definition",
+      "Data Validation",
+      "Excel",
+      "Power BI",
+      "Tableau",
+    ],
   },
   {
-    category: "Practices",
-    items: ["Responsive Design", "Performance Optimisation", "SEO", "Accessibility (a11y)"],
+    category: "Technical",
+    items: ["React", "Next.js", "HTML/CSS", "REST API", "Git"],
   },
 ];
+
+export const deliverables: string[] = [
+  "Business Requirement Document (BRD)",
+  "Functional Specification Document (FSD)",
+  "User Acceptance Criteria (Gherkin)",
+  "Jira User Stories",
+  "Business Rules",
+  "Dashboard Metric Definitions",
+  "Process Flow Diagrams",
+  "UAT Support Documents",
+  "Gap Analysis",
+  "Change Request Documentation",
+];
+
+export const impactMetrics = [
+  { value: "[ISI: 20+]", label: "Stakeholder workshops facilitated" },
+  { value: "[ISI: 50+]", label: "Jira user stories & UAC scenarios delivered" },
+  { value: "[ISI: 5]", label: "Enterprise dashboards with defined metrics" },
+];
+
+export type CaseStudy = {
+  title: string;
+  challenge: string;
+  approach: string[];
+  deliverables: string[];
+  outcome: string[];
+};
+
+export const caseStudy: CaseStudy = {
+  title: "Improving mTOYOTA Activation Metrics",
+  challenge:
+    "Stakeholders had inconsistent definitions of activation and registration metrics.",
+  approach: [
+    "Conducted workshops",
+    "Identified gaps",
+    "Defined business rules",
+    "Established dashboard calculations",
+  ],
+  deliverables: ["FSD", "UAC", "Metric Definitions"],
+  outcome: [
+    "Improved consistency across reports",
+    "Reduced clarification cycles during development",
+  ],
+};
