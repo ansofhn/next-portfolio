@@ -3,7 +3,7 @@ export const siteConfig = {
   role: "IT Business Analyst & Software Developer",
   tagline:
     "Bridging business needs and technology solutions through requirement analysis, stakeholder collaboration, and data-driven decision making.",
-  bio: "Over the past several years, I have been working closely with business stakeholders, development teams, and end users to transform business challenges into digital solutions. I specialize in requirement elicitation, Functional Specification Documents (FSD), User Acceptance Criteria (UAC), dashboard metric definitions, and stakeholder alignment across [ISI SENDIRI: industri/domain]. With a technical background, I bridge the gap between business and engineering teams to ensure solutions are practical, measurable, and user-centric.",
+  bio: "Over the past several years, I have been working closely with business stakeholders, development teams, and end users to transform business challenges into digital solutions. I specialize in requirement elicitation, Functional Specification Documents (FSD), User Acceptance Criteria (UAC), dashboard metric definitions, and stakeholder alignment. With a technical background, I bridge the gap between business and engineering teams to ensure solutions are practical, measurable, and user-centric.",
   email: "ansofhn5@gmail.com",
   phone: "085692751958",
   location: "Bogor, Indonesia",

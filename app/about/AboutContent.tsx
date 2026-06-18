@@ -5,9 +5,9 @@ import { siteConfig, skills } from "@/lib/data";
 
 const experience = [
   {
-    company: "[Toyota Astra Motor]",
+    company: "Astra Digital International",
     role: "Business Analyst",
-    period: "Oct 2023 – Present",
+    period: "May 2023 – Present",
     description:
       "Facilitated requirement gathering, produced FSD/BRD/UAC, and aligned business and engineering teams across automotive digital initiatives.",
     responsibilities: [
@@ -20,33 +20,32 @@ const experience = [
     ],
   },
   {
-    company: "Trustlink CDI",
-    role: "Front End Developer",
-    period: "Jan 2023 – Present",
+    company: "PT Adyatma Cendekia Sinergi Abadi",
+    role: "Frontend Developer",
+    period: "May 2022 – May 2024",
     description:
-      "Leading front-end development for an identity verification SaaS platform. Architected the dashboard, real-time document upload, and status-tracking UI.",
-  },
-  {
-    company: "G11 Game",
-    role: "Front End Developer",
-    period: "Sep 2022 – Mar 2023",
-    description:
-      "Developed the match simulation interface and squad-management screens for a football web game. Implemented complex animations and live match state management.",
-  },
-  {
-    company: "Freelance",
-    role: "Front End Developer",
-    period: "May 2022 – Present",
-    description:
-      "Delivered web projects for SMEs and startups across e-commerce, agriculture, and education sectors.",
+      "Developed responsive and interactive user interfaces for web applications using modern JavaScript frameworks.",
+    responsibilities: [
+      "Built responsive user interfaces using HTML, CSS, and JavaScript",
+      "Translated UI/UX designs into interactive web pages",
+      "Optimized front-end performance and accessibility",
+      "Collaborated with design and back-end teams on feature integration",
+      "Performed debugging, testing, and cross-browser validation",
+      "Maintained front-end documentation and development standards",
+    ],
   },
 ];
 
 const education = [
   {
+    school: "Universitas Indraprasta PGRI",
+    field: "Bachelor of Computer Science",
+    period: "2023 – 2027",
+  },
+  {
     school: "SMKN 1 Cibinong",
-    field: "Sistem Informatika Jaringan dan Aplikasi (SIJA)",
-    period: "2020 – 2023",
+    field: "Sistem Informatika Jaringan dan Aplikasi",
+    period: "2019 – 2023",
   },
 ];
 
