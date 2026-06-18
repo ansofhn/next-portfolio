@@ -18,6 +18,7 @@ export const siteConfig = {
 export type BAProject = {
   id: string;
   title: string;
+  period: string;
   role: string;
   scope: string[];
   deliverables: string[];
@@ -28,6 +29,7 @@ export const baProjects: BAProject[] = [
   {
     id: "BA-002",
     title: "DIDX - mTOYOTA & DXMI Platform",
+    period: "Nov 2024 – Present",
     role: "Business Analyst",
     scope: [
       "Customer-facing (mTOYOTA) platform",
@@ -57,6 +59,7 @@ export const baProjects: BAProject[] = [
   {
     id: "BA-001",
     title: "Odysseus Digiroom Auto2000",
+    period: "Apr 2023 – Oct 2024",
     role: "Business Analyst",
     scope: [
       "Responsible for requirement analysis",
