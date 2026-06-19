@@ -22,7 +22,7 @@ const experience = [
   {
     company: "PT Adyatma Cendekia Sinergi Abadi",
     role: "Frontend Developer",
-    period: "May 2022 – May 2024",
+    period: "Apr 2022 – May 2024",
     description:
       "Developed responsive and interactive user interfaces for web applications using modern JavaScript frameworks.",
     responsibilities: [

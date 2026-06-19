@@ -58,7 +58,7 @@ export const baProjects: BAProject[] = [
   },
   {
     id: "BA-001",
-    title: "Odysseus Digiroom Auto2000",
+    title: "Digiroom Auto2000",
     period: "May 2023 – Oct 2024",
     role: "Business Analyst",
     scope: [
@@ -131,7 +131,7 @@ export const technicalProjects: Project[] = [
     period: "Nov 2022 – Dec 2022",
     description:
       "A movie discovery and streaming-link aggregator with search, filtering by genre, and a watchlist feature.",
-    tags: ["React", "TMDB API", "Tailwind CSS"],
+    tags: ["Next.js", "TMDB API", "Tailwind CSS"],
     image: "/assets/Movsoft.png",
   },
   {
@@ -151,7 +151,7 @@ export const technicalProjects: Project[] = [
     period: "May 2022 – Aug 2022",
     description:
       "Dashboard for a chicken farm operation — tracks flock health, feed logs, mortality rates, and weight milestones.",
-    tags: ["React", "Chart.js", "Tailwind CSS"],
+    tags: ["Next.js", "Tailwind CSS"],
     image: "/assets/Chikufarm.png",
   },
 ];
@@ -198,7 +198,7 @@ export const skills: Skill[] = [
   },
   {
     category: "Technical",
-    items: ["React", "Next.js", "Tailwind", "HTML/CSS", "REST API", "Git"],
+    items: ["React", "Next.js", "Tailwind CSS", "HTML/CSS", "REST API", "Git"],
   },
 ];
 
@@ -230,18 +230,30 @@ export type CaseStudy = {
 };
 
 export const caseStudy: CaseStudy = {
-  title: "Improving mTOYOTA Activation Metrics",
+  title: "Digitalizing the Trade-In & Vehicle Appraisal Journey",
   challenge:
-    "Stakeholders had inconsistent definitions of activation and registration metrics.",
+    "The trade-in process involved multiple manual touchpoints between customers and dealers, resulting in inconsistent data collection, limited visibility into booking status, and a fragmented customer experience across appraisal and trade-in journeys.",
   approach: [
-    "Conducted workshops",
-    "Identified gaps",
-    "Defined business rules",
-    "Established dashboard calculations",
+    "Conducted requirement gathering workshops with business stakeholders and dealer representatives",
+    "Mapped end-to-end customer and dealer journeys across mTOYOTA and DXMI platforms",
+    "Identified process gaps and pain points in appraisal booking, amendment requests, and trade-in submissions",
+    "Defined business rules, booking statuses, and dealer-customer interaction flows",
+    "Produced functional specifications and Gherkin-based acceptance criteria for development and QA teams",
+    "Facilitated stakeholder alignment for customer-facing and dealer-facing process changes",
   ],
-  deliverables: ["FSD", "UAC", "Metric Definitions"],
+  deliverables: [
+    "Functional Specification Document (FSD)",
+    "User Acceptance Criteria (Gherkin)",
+    "Business Rules Documentation",
+    "Process Flow Diagrams",
+    "Jira User Stories & Change Requests",
+    "UAT Support Documentation",
+  ],
   outcome: [
-    "Improved consistency across reports",
-    "Reduced clarification cycles during development",
+    "Standardized trade-in and appraisal processes across customer and dealer platforms",
+    "Improved visibility of booking and amendment statuses for both customers and dealers",
+    "Reduced ambiguity in business requirements through structured documentation",
+    "Enhanced collaboration between business stakeholders, dealers, development teams, and QA",
+    "Enabled a more seamless digital trade-in experience within the Toyota ecosystem",
   ],
 };
