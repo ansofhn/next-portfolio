@@ -230,30 +230,23 @@ export type CaseStudy = {
 };
 
 export const caseStudy: CaseStudy = {
-  title: "Optimizing Trade-In Journey",
+  title: "Trade-In Journey Enhancement",
 
   challenge:
-    "The trade-in process involved multiple stakeholders and touchpoints, creating inconsistencies in lead handling, status tracking, and customer visibility throughout the journey.",
+    "Trade-in processes across mTOYOTA and DXMI needed standardized workflows and status tracking.",
 
   approach: [
-    "Conducted stakeholder workshops with business users and operational teams",
-    "Mapped the end-to-end trade-in customer journey",
-    "Analyzed business process gaps and system dependencies",
-    "Defined business rules, statuses, and lead management workflows",
-    "Created functional specifications and acceptance criteria",
+    "Analyzed business requirements",
+    "Defined trade-in workflows",
+    "Established business rules",
+    "Supported implementation and testing",
   ],
 
-  deliverables: [
-    "Business Process Flow",
-    "Functional Specification Document (FSD)",
-    "User Acceptance Criteria (UAC)",
-    "Business Rules Documentation",
-  ],
+  deliverables: ["FSD", "UAC", "Process Flow", "Business Rules"],
 
   outcome: [
-    "Improved visibility of trade-in lead progression for customers and internal teams",
-    "Standardized trade-in status definitions across systems",
-    "Reduced ambiguity during development and testing phases",
-    "Enabled a more seamless customer experience within the mTOYOTA ecosystem",
+    "Standardized trade-in processes",
+    "Improved lead tracking visibility",
+    "Reduced development rework",
   ],
 };
