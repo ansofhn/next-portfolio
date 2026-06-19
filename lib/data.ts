@@ -230,30 +230,30 @@ export type CaseStudy = {
 };
 
 export const caseStudy: CaseStudy = {
-  title: "Digitalizing the Trade-In & Vehicle Appraisal Journey",
+  title: "Optimizing Trade-In Journey",
+
   challenge:
-    "The trade-in process involved multiple manual touchpoints between customers and dealers, resulting in inconsistent data collection, limited visibility into booking status, and a fragmented customer experience across appraisal and trade-in journeys.",
+    "The trade-in process involved multiple stakeholders and touchpoints, creating inconsistencies in lead handling, status tracking, and customer visibility throughout the journey.",
+
   approach: [
-    "Conducted requirement gathering workshops with business stakeholders and dealer representatives",
-    "Mapped end-to-end customer and dealer journeys across mTOYOTA and DXMI platforms",
-    "Identified process gaps and pain points in appraisal booking, amendment requests, and trade-in submissions",
-    "Defined business rules, booking statuses, and dealer-customer interaction flows",
-    "Produced functional specifications and Gherkin-based acceptance criteria for development and QA teams",
-    "Facilitated stakeholder alignment for customer-facing and dealer-facing process changes",
+    "Conducted stakeholder workshops with business users and operational teams",
+    "Mapped the end-to-end trade-in customer journey",
+    "Analyzed business process gaps and system dependencies",
+    "Defined business rules, statuses, and lead management workflows",
+    "Created functional specifications and acceptance criteria",
   ],
+
   deliverables: [
+    "Business Process Flow",
     "Functional Specification Document (FSD)",
-    "User Acceptance Criteria (Gherkin)",
+    "User Acceptance Criteria (UAC)",
     "Business Rules Documentation",
-    "Process Flow Diagrams",
-    "Jira User Stories & Change Requests",
-    "UAT Support Documentation",
   ],
+
   outcome: [
-    "Standardized trade-in and appraisal processes across customer and dealer platforms",
-    "Improved visibility of booking and amendment statuses for both customers and dealers",
-    "Reduced ambiguity in business requirements through structured documentation",
-    "Enhanced collaboration between business stakeholders, dealers, development teams, and QA",
-    "Enabled a more seamless digital trade-in experience within the Toyota ecosystem",
+    "Improved visibility of trade-in lead progression for customers and internal teams",
+    "Standardized trade-in status definitions across systems",
+    "Reduced ambiguity during development and testing phases",
+    "Enabled a more seamless customer experience within the mTOYOTA ecosystem",
   ],
 };
