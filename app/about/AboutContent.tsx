@@ -11,10 +11,9 @@ const experience = [
     description:
       "Facilitated requirement gathering, produced FSD/BRD/UAC, and aligned business and engineering teams across automotive digital initiatives.",
     responsibilities: [
-      "Facilitated requirement gathering workshops with business stakeholders",
-      "Produced FSD, BRD, and UAC using Gherkin standards",
-      "Defined dashboard metrics, business rules, and KPI calculations",
-      "Coordinated alignment between business users, developers, QA, and UI/UX",
+      "Conducted requirement elicitation and stakeholder workshops for Toyota digital ecosystem initiatives",
+      "Produced Functional Specification Documents (FSD), User Acceptance Criteria (UAC), business rules, process flows, and metric definition",
+      "Coordinated alignment between business users, developers, QA, and UI/UX Designer",
       "Managed change requests and backlog refinement using Jira",
       "Conducted impact analysis and UAT support",
     ],
@@ -100,15 +99,15 @@ export default function AboutContent() {
               {siteConfig.bio}
             </p>
             <p className="text-base sm:text-lg text-[#1c1b18]/70 leading-relaxed">
-              I specialize in requirement elicitation, Functional Specification
-              Documents (FSD), User Acceptance Criteria (UAC), dashboard metric
-              definitions, and stakeholder alignment across automotive digital
-              initiatives.
+              Experienced in requirement elicitation, business process analysis,
+              stakeholder management, Functional Specification Documents (FSD),
+              User Acceptance Criteria (UAC), dashboard metric definition, and
+              digital product enhancement.
               <br />
               <br />
-              With a technical background, I bridge the gap between business and
-              engineering teams to ensure solutions are practical, measurable,
-              and user-centric.
+              With a technical background in software development, I bridge
+              business objectives and technology implementation to ensure
+              solutions are practical, measurable, and user-centric.
             </p>
           </motion.div>
 
