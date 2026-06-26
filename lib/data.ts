@@ -69,12 +69,11 @@ export const baProjects: BAProject[] = [
     ],
     deliverables: [
       "Business Requirements Documents (BRD)",
+      "Business Process Specifications (BPS)",
       "Functional Specification Documents (FSD)",
-      "User Stories & Acceptance Criteria",
-      "Business Rules Documentation",
-      "Process Flow & User Journey Mapping",
-      "Change Request Analysis",
-      "UAT Support & Validation",
+      "Dashboard Requirements",
+      "User Flow Design",
+      "Reporting and Analytics Requirements",
     ],
     impact:
       "Improved digital vehicle sales journey and customer acquisition processes.",

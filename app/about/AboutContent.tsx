@@ -129,8 +129,9 @@ export default function AboutContent() {
                 <div className="space-y-1">
                   <p className="font-bold text-[#1c1b18]">{exp.company}</p>
                   <p className="text-sm text-[#1c1b18]/50">{exp.role}</p>
-                  <p className="text-sm text-[#1c1b18]/60 mt-2 leading-relaxed">
-                    {exp.description}
+                  <div className="text-sm text-[#1c1b18]/60 mt-2 leading-relaxed">
+                    <p>{exp.description}</p>
+
                     {exp.responsibilities && (
                       <ul className="list-disc list-inside mt-2 space-y-1">
                         {exp.responsibilities.map((item, j) => (
@@ -140,7 +141,7 @@ export default function AboutContent() {
                         ))}
                       </ul>
                     )}
-                  </p>
+                  </div>
                 </div>
                 <div className="text-right">
                   <span className="text-xs text-[#1c1b18]/30 whitespace-nowrap">
